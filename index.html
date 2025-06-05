@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino de la Suerte</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="titulo">Casino de la Suerte</h1>
+
+  <div class="container">
+    <div class="caja computadora">
+      <p>Número de la Computadora</p>
+      <div id="numeroComputadora">?</div>
+    </div>
+
+    <div class="caja jugador">
+      <p>Tu número</p>
+      <input type="number" id="inputJugador" min="1" max="10">
+      <div id="numeroJugador">?</div>
+    </div>
+  </div>
+
+  <button id="btnComparar">Comparar</button>
+
+  <div class="vidas">
+    Vidas: <span id="contadorVidas">3</span>
+  </div>
+
+  <div id="mensaje"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

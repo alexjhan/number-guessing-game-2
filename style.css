@@ -1,0 +1,80 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle, #1e002a 0%, #000000 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 3em;
+  color: gold;
+  animation: brillar 2s infinite alternate;
+}
+
+@keyframes brillar {
+  from { text-shadow: 0 0 10px gold; }
+  to { text-shadow: 0 0 30px orange; }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.caja {
+  border: 3px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  background-color: #330033;
+  box-shadow: 0 0 15px gold;
+}
+
+#numeroComputadora, #numeroJugador {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #00ffff;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, gold, orange);
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 10px gold;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.vidas {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: red;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: lime;
+  font-weight: bold;
+}
